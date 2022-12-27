@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: Teleoperation of Humanoid Robots: A Survey
+title: Teleoperation of Humanoid Robots A Survey
 description: Teleoperation of humanoid robots enables the integration of the cognitive skills and domain expertise of humans with the physical capabilities of humanoid robots.
 The operational versatility of humanoid robots makes them the ideal platform for a wide range of applications  when teleoperating in a remote environment. 
 However, the complexity of humanoid robots imposes challenges for teleoperation, particularly in unstructured dynamic environments with limited communication.
