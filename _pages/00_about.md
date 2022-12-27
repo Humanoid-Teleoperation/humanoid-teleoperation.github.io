@@ -1,13 +1,8 @@
 ---
 layout: about
 permalink: /
-title: Teleoperation of Humanoid Robots A Survey
-description: Teleoperation of humanoid robots enables the integration of the cognitive skills and domain expertise of humans with the physical capabilities of humanoid robots.
-The operational versatility of humanoid robots makes them the ideal platform for a wide range of applications  when teleoperating in a remote environment. 
-However, the complexity of humanoid robots imposes challenges for teleoperation, particularly in unstructured dynamic environments with limited communication.
-Many advancements have been achieved in the last decades in this area, but a comprehensive overview is still missing.
-This survey paper gives an extensive overview of humanoid robot teleoperation, presenting the general architecture of a teleoperation system and analyzing the different components.
-We also discuss different aspects of the topic, including technological and methodological advances, as well as potential applications. 
+title: HAMLETS (Human And Machine in-the-Loop Evaluation and Learning Strategies) - December 12th @ NeurIPS 2020 from 8:15AM PT
+description: Human involvement in AI system design, development, and evaluation is critical to ensure that the insights being derived are practical, and the systems built are meaningful, reliable, and relatable to those who need them. Humans play an integral role in all stages of machine learning development, be it during data generation, interactively teaching, or interpreting, evaluating and debugging models. With growing interest in such “human in the loop” learning, we aim to highlight research in evaluation and training strategies for humans and models in the loop. 
 
 profile:
   align: right
