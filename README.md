@@ -1,1 +1,1 @@
-# HumanoidTeleoperation
+# hamlets-workshop.github.io
