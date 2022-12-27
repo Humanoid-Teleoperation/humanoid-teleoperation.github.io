@@ -1,1 +1,1 @@
-# hamlets-workshop.github.io
+# https://humanoid-teleoperation.github.io/
