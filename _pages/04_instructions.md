@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /cfp/
-title: Call for Papers
+title: TELEOPERATION SYSTEM AND DEVICES
 description: Information about submitting to the NeurIPS 2020 HAMLETS workshop. 
 ---
 

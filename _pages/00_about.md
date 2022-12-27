@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: HAMLETS (Human And Machine in-the-Loop Evaluation and Learning Strategies) - December 12th @ NeurIPS 2020 from 8:15AM PT
+title: Teleoperation of Humanoid Robots A Survey
 description: Human involvement in AI system design, development, and evaluation is critical to ensure that the insights being derived are practical, and the systems built are meaningful, reliable, and relatable to those who need them. Humans play an integral role in all stages of machine learning development, be it during data generation, interactively teaching, or interpreting, evaluating and debugging models. With growing interest in such “human in the loop” learning, we aim to highlight research in evaluation and training strategies for humans and models in the loop. 
 
 profile:

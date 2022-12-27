@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /speakers/
-title: Talks
+title: HUMANOID ROBOT RETARGETING AND CONTROL
 description: We have an exciting list of academics and industry leaders working scross the spectrum of human in-the-loop machine learning to speak at HAMLETS 2020
 ---
 

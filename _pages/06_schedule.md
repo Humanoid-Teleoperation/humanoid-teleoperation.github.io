@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /schedule/
-title: Schedule
+title: ASSISTED TELEOPERATION
 description: Tentative Schedule on Sat, Dec 12th, 2020 @ 08:15 – 20:00 PST. Note that all times are provided in Pacific Standard Time.
 ---
 

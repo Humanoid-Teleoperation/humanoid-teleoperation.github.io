@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /hamlets2021/
-title: HAMLETS 2021
+title: Introduction
 description: Human involvement in AI system design, development, and evaluation is critical to ensure that the insights being derived are practical, and the systems built are meaningful, reliable, and relatable to those who need them. Humans play an integral role in all stages of machine learning development, be it during data generation, interactively teaching, or interpreting, evaluating and debugging models. With growing interest in such “human in the loop” learning, we aim to highlight research in evaluation and training strategies for humans and models in the loop. 
 
 profile:
