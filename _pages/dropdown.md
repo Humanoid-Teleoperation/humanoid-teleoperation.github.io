@@ -20,7 +20,7 @@ children:
     - title: V. COMMUNICATION CHANNEL
       permalink: /teleop-sys-devices/
     - title: divider
-    - title: VI. DESIGN & EVALUATION OF HUMANOID \\ TELEOPERATION SYSTEM
+    - title: VI. DESIGN & EVALUATION OF HUMANOID <br> TELEOPERATION SYSTEM
       permalink: /teleop-sys-devices/
     - title: divider
     - title: VII. APPLICATIONS AND PERSPECTIVES
