@@ -15,15 +15,12 @@ Many advancements have been achieved in the last decades in this area, but a com
 This survey paper gives an extensive overview of humanoid robot teleoperation, presenting the general architecture of a teleoperation system and analyzing the different components.
 We also discuss different aspects of the topic, including technological and methodological advances, as well as potential applications.
 
-
 # Index Terms
 Humanoid robot; Teleoperation.
 
-# contact
-For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu).
 
 
-# organizers
+# Authors
 
 <div class="row row-cols-2 projects pt-3 pb-3">
   {% include people_horizontal.html name="Kourosh Darvish" affiliation="University of Toronto" url="https://kouroshd.github.io/" img="/assets/img/authors/kourosh.jpg" %}
@@ -78,3 +75,6 @@ For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvis
 </div>
 
 {% endcomment %}
+
+# Contact
+For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu) or open an issue at [here](https://github.com/Humanoid-Teleoperation/humanoid-teleoperation.github.io).
