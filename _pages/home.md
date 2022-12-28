@@ -12,7 +12,7 @@ description:
 Kourosh Darvish$, Luigi Penco$, Joao Ramos,  Rafael Cisneros, \\ Jerry Pratt$, Eiichi Yoshida$, Serena Ivaldi, Daniele Pucci
 
 
-# 
+---
 Teleoperation of humanoid robots enables the integration of the cognitive skills and domain expertise of humans with the physical capabilities of humanoid robots.
 The operational versatility of humanoid robots makes them the ideal platform for a wide range of applications  when teleoperating in a remote environment. 
 However, the complexity of humanoid robots imposes challenges for teleoperation, particularly in unstructured dynamic environments with limited communication.
@@ -24,7 +24,10 @@ We also discuss different aspects of the topic, including technological and meth
 # Index Terms
 Humanoid robot; Teleoperation.
 
-<!-->
+# contact
+For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu).
+
+<!--
 # keynote speakers
   <div class="row projects pt-1 pb-1">
       <div class="col-sm-4">
@@ -96,13 +99,7 @@ Humanoid robot; Teleoperation.
 * [Alexia Jolicoeur-Martineau](https://ajolicoeur.wordpress.com/about/), Samsung Research.
 * [Arash Vahdat](http://latentspace.cc/), NVIDIA Research.
 {% endcomment %}
--->
-
-# contact
-For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu).
-
-
-<!--
+ 
 {% comment %}
 <div class="row justify-content-center">
     <div class="col-sm-2 pt-5 pb-5">
