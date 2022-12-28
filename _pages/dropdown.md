@@ -1,13 +1,13 @@
 ---
 layout: page
-title: submenus
-nav: false
-nav_order: 6
+title: sections
+nav: true
+nav_order: 4
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: I. INTRODUCTION
+      permalink: /introduction/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: II. TELEOPERATION SYSTEM AND DEVICES
+      permalink: /teleop-sys-devices/
 ---
