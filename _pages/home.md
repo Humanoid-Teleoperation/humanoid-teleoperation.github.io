@@ -30,7 +30,7 @@ For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvis
   {% include people_horizontal.html name="Luigi Penco" affiliation="IHMC" url="https://www.ihmc.us/groups/luigi-penco/" img="/assets/img/authors/luigi.jpg" %}
   {% include people_horizontal.html name="Joao Ramos" affiliation="Boston Dynamics" url="https://mechse.illinois.edu/people/profile/jlramos" img="/assets/img/authors/joao.jpg" %}
   {% include people_horizontal.html name="Rafael Cisneros" affiliation="CNRS-AIST JRL" url="https://unit.aist.go.jp/jrl-22022/en/members/member-cisneros.html" img="assets/img/authors/Cisneros.jpg" %}
-  {% include people_horizontal.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jepg" url="https://www.ihmc.us/groups/jpratt/" %}
+  {% include people_horizontal.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jpeg" url="https://www.ihmc.us/groups/jpratt/" %}
   {% include people_horizontal.html name="Eiichi Yoshida" affiliation="Tokyo University of Science" img="assets/img/authors/eiichi.jpg" url="https://www.tus.ac.jp/en/fac/p/index.php?7455" %}
   {% include people_horizontal.html name="Serena Ivaldi" affiliation="Inria, CNRS" img="assets/img/authors/serena.png" url="https://members.loria.fr/SIvaldi/" %}
   {% include people_horizontal.html name="Daniele Pucci" affiliation="IIT" img="assets/img/authors/daniele.jpg" url="https://www.iit.it/people-details/-/people/daniele-pucci" %}
@@ -63,7 +63,7 @@ For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvis
         {% include people.html name="Rafael Cisneros" affiliation="CNRS-AIST JRL" url="https://unit.aist.go.jp/jrl-22022/en/members/member-cisneros.html" img="assets/img/authors/Cisneros.jpg" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
-      {% include people.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jepg" url="https://www.ihmc.us/groups/jpratt/" %}
+      {% include people.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jpeg" url="https://www.ihmc.us/groups/jpratt/" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
     {% include people.html name="Eiichi Yoshida" affiliation="Tokyo University of Science" img="assets/img/authors/eiichi.jpg" url="https://www.tus.ac.jp/en/fac/p/index.php?7455" %}
