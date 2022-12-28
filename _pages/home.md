@@ -1,34 +1,30 @@
 ---
 layout: home
 title: home
-home_title: NeurIPS 2022 Workshop on Score-Based Methods
+home_title: 'Teleoperation of Humanoid Robots: A Survey'
 subtitle:
 nav_title: home
 permalink: /
-description: A workshop to bring together researchers who use score-based methods in machine learning and statistics.
+description: 
 ---
 
-<h5 style="text-align:center;"><a href="https://neurips.cc/Register2">[click here for registration]</a></h5>
-<h5 style="text-align:center;"><a href="https://forms.gle/Zk9owxUBPf54DRnYA">[click here to submit your questions to our panelists]</a></h5>
+# Authors
+Kourosh Darvish$, Luigi Penco$, Joao Ramos,  Rafael Cisneros, \\ Jerry Pratt$, Eiichi Yoshida$, Serena Ivaldi, Daniele Pucci
 
-# introduction
 
-The **score function**, which is the gradient of the log-density, provides a unique way to represent probability distributions. By working with distributions through score functions, researchers have been able to develop efficient tools for machine learning and statistics, collectively known as **score-based methods**.
+# 
+Teleoperation of humanoid robots enables the integration of the cognitive skills and domain expertise of humans with the physical capabilities of humanoid robots.
+The operational versatility of humanoid robots makes them the ideal platform for a wide range of applications  when teleoperating in a remote environment. 
+However, the complexity of humanoid robots imposes challenges for teleoperation, particularly in unstructured dynamic environments with limited communication.
+Many advancements have been achieved in the last decades in this area, but a comprehensive overview is still missing.
+This survey paper gives an extensive overview of humanoid robot teleoperation, presenting the general architecture of a teleoperation system and analyzing the different components.
+We also discuss different aspects of the topic, including technological and methodological advances, as well as potential applications.
 
-Score-based methods have had a significant impact on vastly disjointed subfields of machine learning and statistics, such as generative modeling, Bayesian inference, hypothesis testing, control variates and Stein’s methods. For example, score-based generative models, or denoising diffusion models, have emerged as the state-of-the-art technique for generating high quality and diverse images. In addition, recent developments in Stein’s method and score-based approaches for stochastic differential equations (SDEs) have contributed to the developement of fast and robust Bayesian posterior inference in high dimensions. These have potential applications in engineering fields, where they could help improve simulation models.
 
-At our workshop, we will bring together researchers from these various subfields to discuss the success of score-based methods, and identify common challenges across different research areas. We will also explore the potential for applying score-based methods to even more real-world applications, including in computer vision, signal processing, and computational chemistry. By doing so, we hope to folster collaboration among researchers and build a more cohesive research community focused on score-based methods.
+# Index Terms
+Humanoid robot; Teleoperation.
 
-This workshop will be an **in-person event** at [NeurIPS 2022](https://neurips.cc/), taking place on **Dec 2nd 2022** from **8:50am** to **5:00pm** in Room 293-294 at the New Orleans Convention Center. The session will cover invited talks, contributed talks, posters, and a panel discussion.
-
-# key dates
-
-* Submission deadline: **Sept 26, 2022 (11:59 pm AOE)**
-
-* Acceptance notification: **Oct 20, 2022**
-
-* Camera ready for accepted submissions: **Nov 25, 2022**
-
+<!-->
 # keynote speakers
   <div class="row projects pt-1 pb-1">
       <div class="col-sm-4">
@@ -100,16 +96,13 @@ This workshop will be an **in-person event** at [NeurIPS 2022](https://neurips.c
 * [Alexia Jolicoeur-Martineau](https://ajolicoeur.wordpress.com/about/), Samsung Research.
 * [Arash Vahdat](http://latentspace.cc/), NVIDIA Research.
 {% endcomment %}
+-->
 
 # contact
-For any questions, please contact us at [scorebased.workshop@gmail.com](mailto:scorebased.workshop@gmail.com).
-
-# sponsors
-* [OpenAI](https://openai.com/) has generously agreed to sponsor around 6 workshop tickets for student from minority groups. Please fill in the [form](https://docs.google.com/forms/d/e/1FAIpQLSegnwUjVQbgUBo3kvDvTjULTcHTD5WS70fBUG1E22kAq9XxJA/viewform).
-
-* [NVIDIA](https://www.nvidia.com/en-us/) has generously provided 2 GPUs as gifts for our awardees.
+For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu).
 
 
+<!--
 {% comment %}
 <div class="row justify-content-center">
     <div class="col-sm-2 pt-5 pb-5">
@@ -137,3 +130,4 @@ For any questions, please contact us at [scorebased.workshop@gmail.com](mailto:s
 </div>
 
 {% endcomment %}
+-->
