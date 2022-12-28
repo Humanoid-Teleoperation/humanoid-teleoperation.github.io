@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink:
-title: PDF
+title: pdf
 nav: true
 nav_order: 1
 ---
