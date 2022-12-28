@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-first_name: SBM @ NeurIPS
+first_name: Humanoid Teleoperation
 last_name:
-title: SBM @ NeurIPS # the website title (if blank, full name will be used instead)
-email: yangsong@cs.stanford.edu
+title: Humanoid Teleoperation # the website title (if blank, full name will be used instead)
+email:  
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A venue for score-based methods in NeurIPS 2022.
 footer_text: >
@@ -16,7 +16,7 @@ keywords: score functions, score-based methods, diffusion  # add your own keywor
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ∇  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://score-based-methods-workshop.github.io # the base hostname & protocol for your site
+url: https://humanoid-teleoperation.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
