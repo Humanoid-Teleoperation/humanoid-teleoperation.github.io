@@ -23,37 +23,28 @@ Humanoid robot; Teleoperation.
 For any questions, please contact us at [kdarvish@cs.toronto.edu](mailto:kdarvish@cs.toronto.edu).
 
 
-
-# Authors
-Kourosh Darvish
-Luigi Penco$
-Joao Ramos
-Rafael Cisneros
-Jerry Pratt$
-Eiichi Yoshida$
-Serena Ivaldi
-Daniele Pucci
-
 # organizers
 
 <div class="row row-cols-2 projects pt-3 pb-3">
   {% include people_horizontal.html name="Kourosh Darvish" affiliation="University of Toronto" url="https://kouroshd.github.io/" img="/assets/img/authors/kourosh.jpg" %}
-  {% include people_horizontal.html name="Yang Song" affiliation="OpenAI" url="https://yang-song.net" img="/assets/img/people/yang.jpeg" %}
-  {% include people_horizontal.html name="Valentin De Bortoli" affiliation="CNRS" url="https://vdeborto.github.io/" img="/assets/img/people/valentin.jpeg" %}
-  {% include people_horizontal.html name="François-Xavier Briol" affiliation="University College London" url="https://fxbriol.github.io/" img="assets/img/people/fxbriol.jpeg" %}
-  {% include people_horizontal.html name="Wenbo Gong" affiliation="Microsoft Research" img="assets/img/people/wenbo.jpeg" url="http://mlg.eng.cam.ac.uk/?portfolio=wenbo-gong" %}
-  {% include people_horizontal.html name="Alexia Jolicoeur-Martineau" affiliation="Samsung — SAIT AI Lab, Montreal" img="assets/img/people/alexia.jpeg" url="https://ajolicoeur.wordpress.com/about/" %}
-  {% include people_horizontal.html name="Arash Vahdat" affiliation="NVIDIA Research" img="assets/img/people/arash.jpeg" url="http://latentspace.cc/" %}
+  {% include people_horizontal.html name="Luigi Penco" affiliation="IHMC" url="https://www.ihmc.us/groups/luigi-penco/" img="/assets/img/authors/luigi.jpg" %}
+  {% include people_horizontal.html name="Joao Ramos" affiliation="Boston Dynamics" url="https://mechse.illinois.edu/people/profile/jlramos" img="/assets/img/authors/joao.jpg" %}
+  {% include people_horizontal.html name="Rafael Cisneros" affiliation="CNRS-AIST JRL" url="https://unit.aist.go.jp/jrl-22022/en/members/member-cisneros.html" img="assets/img/authors/Cisneros.jpg" %}
+  {% include people_horizontal.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jepg" url="https://www.ihmc.us/groups/jpratt/" %}
+  {% include people_horizontal.html name="Eiichi Yoshida" affiliation="Tokyo University of Science" img="assets/img/authors/eiichi.jpg" url="https://www.tus.ac.jp/en/fac/p/index.php?7455" %}
+  {% include people_horizontal.html name="Serena Ivaldi" affiliation="Inria, CNRS" img="assets/img/authors/serena.png" url="https://members.loria.fr/SIvaldi/" %}
+  {% include people_horizontal.html name="Daniele Pucci" affiliation="IIT" img="assets/img/authors/daniele.jpg" url="https://www.iit.it/people-details/-/people/daniele-pucci" %}
 </div>
 
 {% comment %}
 * [Kourosh Darvish](https://kouroshd.github.io/), University of Toronto.
-* [Yang Song](https://yang-song.net), OpenAI.
-* [Valentin De Bortoli](https://vdeborto.github.io/), CNRS.
-* [François-Xavier Briol](https://fxbriol.github.io/), University College London.
-* [Wenbo Gong](http://mlg.eng.cam.ac.uk/?portfolio=wenbo-gong), Microsoft Research.
-* [Alexia Jolicoeur-Martineau](https://ajolicoeur.wordpress.com/about/), Samsung Research.
-* [Arash Vahdat](http://latentspace.cc/), NVIDIA Research.
+* [Luigi Penco](https://www.ihmc.us/groups/luigi-penco/), IHMC.
+* [Joao Ramos](https://vdeborto.github.io/), Boston Dynamics.
+* [Rafael Cisneros](https://unit.aist.go.jp/jrl-22022/en/members/member-cisneros.html), CNRS-AIST JRL.
+* [Jerry Pratt](https://www.ihmc.us/groups/jpratt/), IHMC.
+* [Eiichi Yoshida](https://www.tus.ac.jp/en/fac/p/index.php?7455), Tokyo University of Science.
+* [Serena Ivaldi](https://members.loria.fr/SIvaldi/), Inria, CNRS.
+* [Daniele Pucci](https://www.iit.it/people-details/-/people/daniele-pucci), IIT.
 {% endcomment %}
  
 {% comment %}
@@ -62,24 +53,28 @@ Daniele Pucci
         {% include people.html name="Kourosh Darvish" affiliation="University of Toronto" url="https://kouroshd.github.io/" img="/assets/img/authors/kourosh.jpg" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
-      {% include people.html name="Yang Song" affiliation="OpenAI" url="https://yang-song.net" img="/assets/img/people/yang.jpeg" %}
+      {% include people.html name="Luigi Penco" affiliation="IHMC" url="https://www.ihmc.us/groups/luigi-penco/" img="/assets/img/authors/luigi.jpg" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
-          {% include people.html name="Valentin De Bortoli" affiliation="CNRS" url="https://vdeborto.github.io/" img="/assets/img/people/valentin.jpeg" %}
+          {% include people.html name="Joao Ramos" affiliation="Boston Dynamics" url="https://mechse.illinois.edu/people/profile/jlramos" img="/assets/img/authors/joao.jpg" %}
     </div>
     <div class="w-100"></div>
     <div class="col-sm-2 pt-5 pb-5">
-        {% include people.html name="François-Xavier Briol" affiliation="University College London" url="https://fxbriol.github.io/" img="assets/img/people/fxbriol.jpeg" %}
+        {% include people.html name="Rafael Cisneros" affiliation="CNRS-AIST JRL" url="https://unit.aist.go.jp/jrl-22022/en/members/member-cisneros.html" img="assets/img/authors/Cisneros.jpg" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
-      {% include people.html name="Wenbo Gong" affiliation="Microsoft Research" img="assets/img/people/wenbo.jpeg" url="http://mlg.eng.cam.ac.uk/?portfolio=wenbo-gong" %}
+      {% include people.html name="Jerry Pratt" affiliation="IHMC" img="/assets/img/authors/jerry.jepg" url="https://www.ihmc.us/groups/jpratt/" %}
     </div>
     <div class="col-sm-2 pt-5 pb-5">
-    {% include people.html name="Alexia Jolicoeur-Martineau" affiliation="Samsung Research" img="assets/img/people/alexia.jpeg" url="https://ajolicoeur.wordpress.com/about/" %}
+    {% include people.html name="Eiichi Yoshida" affiliation="Tokyo University of Science" img="assets/img/authors/eiichi.jpg" url="https://www.tus.ac.jp/en/fac/p/index.php?7455" %}
   </div>
     <div class="col-sm-2 pt-5 pb-5">
-        {% include people.html name="Arash Vahdat" affiliation="NVIDIA Research" img="assets/img/people/arash.jpeg" url="http://latentspace.cc/" %}
+        {% include people.html name="Serena Ivaldi" affiliation="Inria, CNRS" img="assets/img/authors/serena.png" url="https://members.loria.fr/SIvaldi/" %}
   </div>
+    <div class="col-sm-2 pt-5 pb-5">
+        {% include people.html name="Daniele Pucci" affiliation="IIT" img="assets/img/authors/daniele.jpg" url="https://www.iit.it/people-details/-/people/daniele-pucci" %}
+  </div>
+
 </div>
 
 {% endcomment %}
