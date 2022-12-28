@@ -6,5 +6,4 @@ nav: false
 nav_order: 1
 ---
 
-# VI. DESIGN & EVALUATION OF HUMANOID TELEOPERATION SYSTEM
 WIP

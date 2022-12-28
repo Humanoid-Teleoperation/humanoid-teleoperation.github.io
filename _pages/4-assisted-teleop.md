@@ -6,5 +6,4 @@ nav: false
 nav_order: 1
 ---
 
-# IV. ASSISTED TELEOPERATION
 WIP
