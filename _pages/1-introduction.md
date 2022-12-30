@@ -21,7 +21,7 @@ date:
 #     affiliations:
 #       name: IAS, Princeton
 
-bibliography: 2018-12-22-distill.bib
+bibliography: humanoid-teleoperation.bib
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
