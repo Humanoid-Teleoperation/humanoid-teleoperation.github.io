@@ -11,15 +11,15 @@ bibliography: humanoid-teleoperation.bib
 toc:
   - name: 'A. Teleoperation Architecture'
   - name: 'B. Human Sensory Measurement Devices'
-  subsections:
-        - name: '1) Human kinematics and dynamics measurements'
-        - name: '2) Human physiological measurements'
+    subsections:
+      - name: '1) Human kinematics and dynamics measurements'
+      - name: '2) Human physiological measurements'
   - name: 'C. Feedback Interfaces: Robot to Human'
     subsections:
-        - name: '1) Visual feedback'
-        - name: '2) Haptic feedback'
-        - name: '3) Balance feedback'
-        - name: '4) Auditory feedback'
+      - name: '1) Visual feedback'
+      - name: '2) Haptic feedback'
+      - name: '3) Balance feedback'
+      - name: '4) Auditory feedback'
   - name: 'D. Graphical User Interfaces (GUIs)'
   
 #     # if a section has subsections, you can add them as follows:
