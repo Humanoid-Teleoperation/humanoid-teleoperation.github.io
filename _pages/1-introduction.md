@@ -29,13 +29,13 @@ bibliography: humanoid-teleoperation.bib
 #     for hyperlinks within the post to work correctly.
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
-# toc:
+toc:
 #   - name: Equations
 #     # if a section has subsections, you can add them as follows:
 #     # subsections:
 #     #   - name: Example Child Subsection 1
 #     #   - name: Example Child Subsection 2
-#   - name: Citations
+  - name: Citations
 #   - name: Footnotes
 #   - name: Code Blocks
 #   - name: Layouts
@@ -61,24 +61,26 @@ bibliography: humanoid-teleoperation.bib
 
 ---
 
+
+There are many situations and environments where we need robots to replace humans at the site. 
+Despite the recent progress in robot cognition based on AI techniques, fully autonomous solutions are still far from producing socially and physically competent robot behaviors; that is why teleoperating robots (Fig. 1) acting as physical avatars of human workers at the site is the most reasonable solution.
+In environments like construction sites, chemical plants, contaminated areas and space, teleoperated robots could be extremely valuable, relieving humans from any potential hazard.
+Contrary to other conventional robotic platforms, humanoids' structure is a better fit for environments and tasks that are designed for and performed by humans. The operational versatility of these robots makes them suitable for work activities that require a variety of complex mobility and manipulation skills, such as inspection, maintenance, and interaction with human operators.
+In certain contexts such as telenursing, where human subjects are expected to interact with a teleoperated robot, the human-likeness factor is important since it increases the acceptability, social closeness, and legibility of its intentions <d-cite key="dragan2013a"></d-cite>.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/paper/intropic.png" title="intro pic" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-Examples of humanoid robot teleoperation; from top left to bottom right corner: <d-cite key="ramos2018"></d-cite>, <d-cite key="darvish2019"></d-cite>, <d-cite key="penco2019"></d-cite>, <d-cite key="ishiguro2020bilateral"></d-cite>, <d-cite key="jorgensen2019"></d-cite>, <d-cite key="abi2018"></d-cite>, <d-cite key="kim2013"></d-cite>, <d-cite key="Cisneros2022Team"></d-cite>.
+Fig 1: Examples of humanoid robot teleoperation; from top left to bottom right corner: <d-cite key="ramos2018"></d-cite>, <d-cite key="darvish2019"></d-cite>, <d-cite key="penco2019"></d-cite>, <d-cite key="ishiguro2020bilateral"></d-cite>, <d-cite key="jorgensen2019"></d-cite>, <d-cite key="abi2018"></d-cite>, <d-cite key="kim2013"></d-cite>, <d-cite key="Cisneros2022Team"></d-cite>.
 </div>
-
-There are many situations and environments where we need robots to replace humans at the site. 
-Despite the recent progress in robot cognition based on AI techniques, fully autonomous solutions are still far from producing socially and physically competent robot behaviors; that is why teleoperating robots (Fig. \ref{fig:intropic}) acting as physical avatars of human workers at the site is the most reasonable solution.
-In environments like construction sites, chemical plants, contaminated areas and space, teleoperated robots could be extremely valuable, relieving humans from any potential hazard.
-Contrary to other conventional robotic platforms, humanoids' structure is a better fit for environments and tasks that are designed for and performed by humans. The operational versatility of these robots makes them suitable for work activities that require a variety of complex mobility and manipulation skills, such as inspection, maintenance, and interaction with human operators.
-In certain contexts such as telenursing, where human subjects are expected to interact with a teleoperated robot, the human-likeness factor is important since it increases the acceptability, social closeness, and legibility of its intentions <d-cite key="dragan2013a"></d-cite>.
 
 
 In the literature, different attempts have been made to
 > deploy the senses, actions, and presence of a human to a remote location in real-time, leading to a more connected world <d-cite key="AnaAvatarXprize"></d-cite>.
+
 Inspired by a visit to the Tachi Lab, the XPRIZE Foundation has recently launched the ANA Avatar XPRIZE global competition <d-cite key="AnaAvatarXprize"></d-cite>.
 Previously, in response to the 2011 Fukushima Daiichi nuclear disaster, the DARPA Robotics Challenge (DRC) was launched to promote innovation in human-supervised robotic technology.
 In space applications, rovers and mobile manipulators were teleoperated from aboard the International Space Station (ISS), in the context of METERON and Kontur-2 projects <d-cite key="kontur-meteron"></d-cite>. In 2019, the humanoid Skybot F-850 was rocketed to the ISS <d-cite key="skybot2019"></d-cite>; however, it turned out to have a design that did not work well, demonstrating that there is still work to do to get humanoids into space.
