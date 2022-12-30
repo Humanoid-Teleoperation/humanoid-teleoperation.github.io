@@ -62,7 +62,7 @@ toc:
 ---
 
 
-There are many situations and environments where we need robots to replace humans at the site.  <d-cite key="gregor2015draw"></d-cite>
+There are many situations and environments where we need robots to replace humans at the site.
 Despite the recent progress in robot cognition based on AI techniques, fully autonomous solutions are still far from producing socially and physically competent robot behaviors; that is why teleoperating robots (Fig. 1) acting as physical avatars of human workers at the site is the most reasonable solution.
 In environments like construction sites, chemical plants, contaminated areas and space, teleoperated robots could be extremely valuable, relieving humans from any potential hazard.
 Contrary to other conventional robotic platforms, humanoids' structure is a better fit for environments and tasks that are designed for and performed by humans. The operational versatility of these robots makes them suitable for work activities that require a variety of complex mobility and manipulation skills, such as inspection, maintenance, and interaction with human operators.
