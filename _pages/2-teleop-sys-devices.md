@@ -8,19 +8,19 @@ description:
 date:
 bibliography: humanoid-teleoperation.bib
 
-# toc:
-#   - name: 'A. Teleoperation Architecture'
-#   - name: 'B. Human Sensory Measurement Devices'
-#   subsections:
-#         - name: '1) Human kinematics and dynamics measurements'
-#         - name: '2) Human physiological measurements'
-#   - name: 'C. Feedback Interfaces: Robot to Human'
-#     subsections:
-#         - name: '1) Visual feedback'
-#         - name: '2) Haptic feedback'
-#         - name: '3) Balance feedback'
-#         - name: '4) Auditory feedback'
-#   - name: 'D. Graphical User Interfaces (GUIs)'
+toc:
+  - name: 'A. Teleoperation Architecture'
+  - name: 'B. Human Sensory Measurement Devices'
+  subsections:
+        - name: '1) Human kinematics and dynamics measurements'
+        - name: '2) Human physiological measurements'
+  - name: 'C. Feedback Interfaces: Robot to Human'
+    subsections:
+        - name: '1) Visual feedback'
+        - name: '2) Haptic feedback'
+        - name: '3) Balance feedback'
+        - name: '4) Auditory feedback'
+  - name: 'D. Graphical User Interfaces (GUIs)'
   
 #     # if a section has subsections, you can add them as follows:
 #     # subsections:
@@ -99,7 +99,7 @@ We report in TABLE 1 the various measurement devices adopted so far for humanoid
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 1) Human kinematics and dynamics measurements
+### 1) Human kinematics and dynamics measurements
 To provide the references for the robot motion, we need to sense human intentions.
 For simple teleoperation cases, the measurements may be granted through simple interfaces such as keyboard, mouse, or joystick commands <d-cite key="ando2020master"></d-cite>.
 However, for a more complex system like a humanoid robot, those simple interfaces may not be enough, especially when the user wants to exert a high level of control authority over the robot. Therefore, the need for natural interfaces for effectively commanding the robot arises. 
@@ -326,7 +326,7 @@ Richer information can be obtained by distributed capacitance sensors that measu
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 2) Human physiological measurements
+### 2) Human physiological measurements
 Among the different sensors available to measure human physiological activities, we briefly describe those that have been mostly used in teleoperation and robotics literature. 
 An electromyography (EMG) sensor provides a measure of the muscle activity, i.e., contraction, in response to the neural stimulation action potential <d-cite key="staudenmann2010methodological"></d-cite>. It works by measuring the difference between the electrical potential generated in the muscle fibres by employing two or more electrodes. There are two types of EMG sensors, the surface EMG and the intramuscular EMG. The former records the muscle activity from above the skin (therefore, noninvasive), while the latter measures the muscle activity by inserting needle electrodes into the muscle (intrusive). The main problem with EMG sensors, especially the surface one, is the low signal to noise ratio, which is the main barrier for a desirable performance <d-cite key="chowdhury2013surface"></d-cite>. The EMG signals are used in the literature for teleoperating a robot or a prosthesis,  
 for estimation of the human effort and muscle forces <d-cite key="staudenmann2010methodological"></d-cite>, or for estimation of the muscle stiffness. The EMG signals can anticipate human motions by measuring the muscle activities within a few milliseconds in advance of force generation; this could be exploited to anticipate the human operator's motion, enhancing the teleoperation. 
@@ -344,7 +344,7 @@ A crucial point in robot teleoperation is to sufficiently inform the human opera
 TABLE 1 summarizes the different feedback devices that have been adopted for humanoid teleoperation.
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 1) Visual feedback
+### 1) Visual feedback
 A conventional way to provide situation awareness to the human operator is through visual feedback. Visual information allows the user to localize themselves and other humans or objects in the remote environment.
 Graphical User Interfaces (GUIs) were widely used by the teams participating at the DRC to remotely pilot their robots through the competition tasks~<d-cite key="johnson2017team,cisneros2016,zucker2015"></d-cite>. 
 Not only the information coming from the RGB cameras of the robot but also other information such as depth, LIDAR, RADAR, and thermographic maps of the remote environment was displayed to the user.
@@ -358,7 +358,7 @@ Also, human reaction time to visual input is inherently slow ($\approx$250-300 m
 
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 2) Haptic feedback
+### 2) Haptic feedback
 Visual feedback is not often sufficient for many real-world applications, especially those involving power manipulation (with high forces) or interaction with other human subjects, where the dynamics of the robot, the contact forces with the environment, and the human-robot interaction forces are of crucial importance. In such scenarios also the haptic feedback is required to exploit the human operator's motor skills in order to augment the robot performance. 
 
 There are different technologies available in the literature to provide haptic feedback to the human. Force feedback, tactile and vibro-tactile feedback are the most used in teleoperation scenarios.
@@ -374,7 +374,7 @@ All these types of haptic feedback are combined in the telexistence system TELES
 The idea is that different physical stimuli give rise to the same sensation in humans and are perceived as identical. This is due to the the fact that human skin has limited receptors and can perceive only force, vibration, and temperature, which in <d-cite key="hapticcolors"></d-cite> are defined as \textit{haptic primary colors}. It is thus sufficient to combine these \textit{colors} in order to reproduce any cutaneous sensation without actually touching the real object.
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 3) Balance feedback
+### 3) Balance feedback
 Haptic feedback can also be used to transmit to the operator a sense of the robot's balance.
 The idea behind the balance feedback is to transfer to the operator the information about the \textit{effect of disturbances} over the robot dynamics or stability instead of directly mapping to the human the disturbance forces applied to the robot. 
 In <d-cite key="brygo2014b"></d-cite>, Brygo \textit{et al.} proposed to provide the feedback of the robot’s balance state by means of a vibro-tactile belt.
@@ -383,7 +383,7 @@ Alternatively, Abi-Farrajil \textit{et al.}~<d-cite key="abi2018"></d-cite> intr
 These studies do not investigate the case of dynamic behaviors, but are rather limited to double support scenarios.
 In~<d-cite key="ramos2018"></d-cite> instead, simultaneous stepping is enabled via bilateral coupling between the human operator, wearing a Balance Feedback Interface (BFI), and the robot. The BFI is composed of an passive exoskeleton which captures human body posture and a parallel mechanism which applies feedback forces to the operator's torso.
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## 4) Auditory feedback
+### 4) Auditory feedback
 Auditory feedback is another means of communication. It is mainly provided to the user through headphones, single or multiple speakers. Auditory information can be used for different purposes: to enable the user to communicate with others in the remote environment through the robot, to increase the user situational awareness, to localize the sound source by using several microphones, or to detect the collision of the robot links with the environment. 
 The user and the teleoperated robot may also communicate through the audio channel; e.g., for state transitions.
 
