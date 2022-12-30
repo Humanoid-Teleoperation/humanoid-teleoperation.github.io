@@ -55,7 +55,7 @@ Moreover, the choice of the interfaces should make the user feel comfortable, he
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/paper/teleoperation-architecture-3.pdf" title="intro pic" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/paper/teleoperation-architecture-3.jpg" title="teleop-arch" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
