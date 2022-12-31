@@ -21,16 +21,6 @@ toc:
       - name: '3) Balance feedback'
       - name: '4) Auditory feedback'
   - name: 'D. Graphical User Interfaces (GUIs)'
-  
-#     # if a section has subsections, you can add them as follows:
-#     # subsections:
-#     #   - name: Example Child Subsection 1
-#     #   - name: Example Child Subsection 2
-#   - name: Citations
-#   - name: Footnotes
-#   - name: Code Blocks
-#   - name: Layouts
-#   - name: Other Typography?
 ---
 
 
