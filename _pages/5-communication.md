@@ -20,7 +20,7 @@ toc:
 In teleoperation, human and humanoid robot transmit information through a \textit{communication channel} <d-cite key="Bemporad_CDC1998"></d-cite>.
 However, the communication channel introduces complexities that impact the stability and performance of the teleoperation, namely, transmission delays, and distortion of the information.
 		
-## 'A. Transmission delays'
+## A. Transmission delays
 
 The interest for the transmission delays in teleoperation emerged back in the 60s.
 The first research to consider the effect of these transmission delays on the performance of the teleoperation was published by Ferrel <d-cite key="Ferrel_THFE1965"></d-cite>. 
@@ -74,7 +74,7 @@ estimate an upper bound of the delay
 through networks statistics, then use it to dissipate energy <d-cite key="Lozano_Mechatronics2002"></d-cite>,
 to emulate a virtual constant-time delay <d-cite key="Kosuge_ICRA1996"></d-cite>, or to use it to extend the horizon of a model predictive control <d-cite key="Bemporad_CDC1998"></d-cite>.
 
-## 'B. Distortion'
+## B. Distortion
 			
 Distortion is another effect introduced by the communication channel.
 In case of packet switched networks, a delay of discrete-time velocity information results in a distortion of velocity and position drift, hence, degrading the performance.
@@ -86,7 +86,7 @@ Another source of distortion is due to the policies introduced when there is inf
 \item to use interpolation <d-cite key="hokayem2006bilateral"></d-cite>.
 \end{inparaenum}
 			
-## 'C. Network-based Model'
+## C. Network-based Model
 
 The standard model of the communication channel is based on network theory.
 By using an analogy between mechanical and electrical systems, we can represent the teleoperation system as
@@ -100,7 +100,7 @@ In the topic of bilateral teleoperation represented by a nonlinear system, which
 However, Anderson <d-cite key="Anderson_IJRR1992"></d-cite> demonstrated that by using a Hilbert network, with efforts and flows
 belonging to a Hilbert space, equivalent analyses could be performed.
 			
-## 'D. Passivity'
+## D. Passivity
 
 The passivity formalism provides a simple and robust tool to analyze the stability of a nonlinear system <d-cite key="Niemeyer_JOE1991"></d-cite>.
 A passive system may dissipate energy ($E(t)$) but it cannot increase its total energy <d-cite key="Anderson_TAC1989"></d-cite>.
@@ -125,7 +125,7 @@ Therefore, if we assume that the operator and the environment behave passively, 
 
 
 			
-## 'E. Stability of Time-delayed Humanoid Robot Teleoperation'
+## E. Stability of Time-delayed Humanoid Robot Teleoperation
 
 Passivity and stability are related as a result of considering the expression of the stored energy as a Lyapunov function <d-cite key="Niemeyer_JOE1991"></d-cite>.
 If the $n$-port corresponding to the communication channel is simply determined by a delay, then it can be demonstrated that a pure delay introduces power~<d-cite key="Anderson_TAC1989"></d-cite>.

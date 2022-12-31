@@ -283,7 +283,7 @@ For example, ankle joint torque control allows for conforming the foot to the gr
 However, the compliance control with only joint torques may lead to poor velocity or position tracking, therefore a mixture of them is proposed in the feedback and feed-forward terms of the joint controller in <d-cite key="johnson2017team, kuindersma2016optimization, cisneros2020inverse"></d-cite>.
 
 
-## 'F. State Estimator, Localization & Mapping'
+## F. State Estimator, Localization & Mapping
 
 These blocks in Fig.~\ref{fig:retargeting_controller_architecture} receive measurements from the robot sensors and estimate the necessary information for other blocks in Fig.~\ref{fig:retargeting_controller_architecture} or to the human as shown in Fig.~\ref{fig:teleoperation_architecture} (for assisted teleoperation). 
 A family of well-known model-based estimation techniques commonly used in robotics is the Kalman filters.
@@ -304,7 +304,7 @@ Nevertheless, exploiting only the proprioceptive sensors does not lead to observ
 Exteroceptive data such as camera information allows finding feasible regions for the humanoid robot foot locations as well as a map of the environment and obstacles.
 
 
-## 'G. Challenges & Future Directions for Retargeting & Control'
+## G. Challenges & Future Directions for Retargeting & Control
 
 Humanoid robot teleoperation is a new field, and many challenges to put together whole-body coordinated motion retargeting, planning, stability, and control are not addressed effectively yet.
 For example, dividing the retargeting and planning problems of humanoid robot teleoperations appears to be useful but not effective in performing agile teleoperation tasks outside of the lab (in the real world) and in unstructured environment as it is the case for many hazardous environments and disaster response scenarios.
