@@ -76,7 +76,7 @@ Flowchart of a humanoid robot retargeting, planning, and control architecture (r
 ## A. Modeling
 ### 1) Notations and complete humanoid robot models
 Most humans and humanoid robots are modeled as multi-body mechanical systems with $n+1$ rigid bodies, called links, connected with $n$ joints, each with one degree of freedom.
-The configuration of a humanoid robot with $n$ joints depends on the robot shape, i.e., joint angles $\bf{s}\in \mathbb{R}^n$, the position $^{\mathcal{I}}\bf{p}_{\mathcal{B}}\in \mathbb{R}^3$, and orientation $^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}\in SO(3)$ of the floating base (usually associated with the pelvis,
+The configuration of a humanoid robot with $n$ joints depends on the robot shape, i.e., joint angles $\bf{s}\in \mathbb{R}^n$, the position $$^{\mathcal{I}}\bf{p}_{\mathcal{B}}\in \mathbb{R}^3$$, and orientation $$^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}\in SO(3)$$ of the floating base (usually associated with the pelvis,
 
  ${\mathcal{B}}$) relative to the inertial or world frame $\mathcal{I}$\footnote{ With the abuse of notation, we will drop $\mathcal{I}$ in formulas for simplicity.}. The robot configuration is indicated by $\bf{q} = (^{\mathcal{I}}\bf{p}_{\mathcal{B}}, ^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}, \bf{s})$.
 The pose of a frame attached to a robot link $\mathcal{A}$ is computed via $(^{\mathcal{I}}\bf{p}_{\mathcal{A}}, ^{\mathcal{I}}\bf{R}_{\mathcal{A}}) = \bf{\mathcal{H}}_A(\bf{q})$, where   $\bf{\mathcal{H}}_A(\cdot)$ is the geometrical forward kinematics.
