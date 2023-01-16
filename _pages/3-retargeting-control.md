@@ -83,7 +83,8 @@ vector $$\bf{\nu}=(^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{B}},^{\mathcal{I}}{\bf{\
 The velocity of a frame $$\mathcal{A}$$ attached to the robot, i.e., $$^{\mathcal{I}}\bf{v}_{\mathcal{A}}= (^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{A}},^{\mathcal{I}}{\bf{\omega}}_{\mathcal{A}})$$, is computed by \textit{Jacobian} of $$\mathcal{A}$$ with the linear and angular parts, therefore $$^{\mathcal{A}}\bf{v}_{\mathcal{I}}= \bf{\mathcal{J}}_A(\bf{q}) \bf{\nu}$$.
 Finally, the $$n+6$$ robot dynamics equations, with all $$n_c$$ contact forces applied on the robot, are described by~<d-cite key="cisneros2020inverse"></d-cite>:
 \begin{equation}
-\bf{M}(\bf{q}) \dot{\bf{\nu}} + \bf{C}(\bf{q},\bf{\nu})\bf{\nu} + \bf{g}(\bf{q}) = \bf{B}\bf{\tau} +  \sum_{k=1}^{n_c}\bf{\mathcal{J}}_{k}^{T}(\bf{q}) {\bf{f}_{k}}^{c},
+\bf{M}(\bf{q}) \dot{\bf{\nu}} + \bf{C}(\bf{q},\bf{\nu})\bf{\nu} + \bf{g}(\bf{q}) = \bf{B}\bf{\tau} +  \sum_{k=1}^{n_c}\bf{\mathcal{J}}_{k}^{T}(\bf{q})  {{f}}_{k}^{c} 
+ <!-- {\bf{f}_{k}}^{c}, -->
 <!-- \label{eq:dyn} -->
 \end{equation}
 where $$\bf{M}(\bf{q})$$ is the symmetric positive definite inertia matrix of the robot, $$\bf{C}(\bf{q},\bf{\nu})$$ is the vector of Coriolis and centrifugal terms, $$\bf{g}(\bf{q})$$ is the vector of gravitational terms, $$\bf{B}=(\bf{0}_{n\times{6}},\bf{1}_n)^T$$ is a selector matrix, $$\bf{\tau}$$ is the vector of actuator joint torques, and $$\bf{f}^{c}_{k}$$ is the vector of the $$k$$-th contact wrenches acting on the robot.
