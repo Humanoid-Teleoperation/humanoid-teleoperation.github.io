@@ -47,7 +47,7 @@ toc:
 
 
 This section describes the retargeting and control techniques for unilateral teleoperation of humanoid robots.
-We can define the retargeting and control as a mapping $\mathbb{H}: A \to A^{\prime}$ where $A$ is the domain of the perceived human actions (kinematic and dynamic trajectories) and $A^{\prime}$ is the space of robot actions.
+We can define the retargeting and control as a mapping $$\mathbb{H}: A \to A^{\prime}$$ where $$A$$ is the domain of the perceived human actions (kinematic and dynamic trajectories) and $$A^{\prime}$$ is the space of robot actions.
 In this definition, the mapping principle identifies the robot autonomy and the human authority in the teleoperation scenario.
 This mapping should be identified such that it minimizes the difference between the human intent and the robot actions while respecting the constraints in the teleoperation scenario.
 
@@ -75,20 +75,18 @@ Flowchart of a humanoid robot retargeting, planning, and control architecture (r
 
 ## A. Modeling
 ### 1) Notations and complete humanoid robot models
-Most humans and humanoid robots are modeled as multi-body mechanical systems with $n+1$ rigid bodies, called links, connected with $n$ joints, each with one degree of freedom.
-The configuration of a humanoid robot with $n$ joints depends on the robot shape, i.e., joint angles $\bf{s}\in \mathbb{R}^n$, the position $$^{\mathcal{I}}\bf{p}_{\mathcal{B}}\in \mathbb{R}^3$$, and orientation $$^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}\in SO(3)$$ of the floating base (usually associated with the pelvis,
-
- ${\mathcal{B}}$) relative to the inertial or world frame $\mathcal{I}$\footnote{ With the abuse of notation, we will drop $\mathcal{I}$ in formulas for simplicity.}. The robot configuration is indicated by $\bf{q} = (^{\mathcal{I}}\bf{p}_{\mathcal{B}}, ^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}, \bf{s})$.
-The pose of a frame attached to a robot link $\mathcal{A}$ is computed via $(^{\mathcal{I}}\bf{p}_{\mathcal{A}}, ^{\mathcal{I}}\bf{R}_{\mathcal{A}}) = \bf{\mathcal{H}}_A(\bf{q})$, where   $\bf{\mathcal{H}}_A(\cdot)$ is the geometrical forward kinematics.
+Most humans and humanoid robots are modeled as multi-body mechanical systems with $$n+1$$ rigid bodies, called links, connected with $$n$$ joints, each with one degree of freedom.
+The configuration of a humanoid robot with $$n$$ joints depends on the robot shape, i.e., joint angles $$\bf{s}\in \mathbb{R}^n$$, the position $$^{\mathcal{I}}\bf{p}_{\mathcal{B}}\in \mathbb{R}^3$$, and orientation $$^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}\in SO(3)$$ of the floating base (usually associated with the pelvis, $${\mathcal{B}}$$) relative to the inertial or world frame $$\mathcal{I}$$\footnote{ With the abuse of notation, we will drop $$\mathcal{I}$$ in formulas for simplicity.}. The robot configuration is indicated by $$\bf{q} = (^{\mathcal{I}}\bf{p}_{\mathcal{B}}, ^{\mathcal{I}}{\bf{R}}_{\mathcal{B}}, \bf{s})$$.
+The pose of a frame attached to a robot link $$\mathcal{A}$$ is computed via $$(^{\mathcal{I}}\bf{p}_{\mathcal{A}}, ^{\mathcal{I}}\bf{R}_{\mathcal{A}}) = \bf{\mathcal{H}}_A(\bf{q})$$, where   $$\bf{\mathcal{H}}_A(\cdot)$$ is the geometrical forward kinematics.
 The velocity of the model is summarized in the 
-vector $\bf{\nu}=(^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{B}},^{\mathcal{I}}{\bf{\omega}}_{\mathcal{B}}, \dot{\bf{s}}) \in \mathbb{R}^{n+6}$, where $^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{B}}$,   $^{\mathcal{I}}{\bf{\omega}}_{\mathcal{B}}$ are the base linear and rotational (angular) velocity of the base frame, and $\dot{\bf{s}}$ is the joints velocity vector of the robot.
-The velocity of a frame $\mathcal{A}$ attached to the robot, i.e., $^{\mathcal{I}}\bf{v}_{\mathcal{A}}= (^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{A}},^{\mathcal{I}}{\bf{\omega}}_{\mathcal{A}})$, is computed by \textit{Jacobian} of $\mathcal{A}$ with the linear and angular parts, therefore $^{\mathcal{A}}\bf{v}_{\mathcal{I}}= \bf{\mathcal{J}}_A(\bf{q}) \bf{\nu}$.
-Finally, the $n+6$ robot dynamics equations, with all $n_c$ contact forces applied on the robot, are described by~<d-cite key="cisneros2020inverse"></d-cite>:
+vector $$\bf{\nu}=(^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{B}},^{\mathcal{I}}{\bf{\omega}}_{\mathcal{B}}, \dot{\bf{s}}) \in \mathbb{R}^{n+6}$$, where $$^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{B}}$$,   $$^{\mathcal{I}}{\bf{\omega}}_{\mathcal{B}}$$ are the base linear and rotational (angular) velocity of the base frame, and $$\dot{\bf{s}}$$ is the joints velocity vector of the robot.
+The velocity of a frame $$\mathcal{A}$$ attached to the robot, i.e., $$^{\mathcal{I}}\bf{v}_{\mathcal{A}}= (^{\mathcal{I}}\dot{\bf{p}}_{\mathcal{A}},^{\mathcal{I}}{\bf{\omega}}_{\mathcal{A}})$$, is computed by \textit{Jacobian} of $$\mathcal{A}$$ with the linear and angular parts, therefore $$^{\mathcal{A}}\bf{v}_{\mathcal{I}}= \bf{\mathcal{J}}_A(\bf{q}) \bf{\nu}$$.
+Finally, the $$n+6$$ robot dynamics equations, with all $$n_c$$ contact forces applied on the robot, are described by~<d-cite key="cisneros2020inverse"></d-cite>:
 \begin{equation}
 \bf{M}(\bf{q}) \dot{\bf{\nu}} + \bf{C}(\bf{q},\bf{\nu})\bf{\nu} + \bf{g}(\bf{q}) = \bf{B}\bf{\tau} + \sum_{k=1}^{n_c}\bf{\mathcal{J}}_{k}^{T}(\bf{q})\bf{f}^{c}_{k},
 \label{eq:dyn}
 \end{equation}
-where $\bf{M}(\bf{q})$ is the symmetric positive definite inertia matrix of the robot, $\bf{C}(\bf{q},\bf{\nu})$ is the vector of Coriolis and centrifugal terms, $\bf{g}(\bf{q})$ is the vector of gravitational terms, $\bf{B}=(\bf{0}_{n\times{6}},\bf{1}_n)^T$ is a selector matrix, $\bf{\tau}$ is the vector of actuator joint torques, and $\bf{f}^{c}_{k}$ is the vector of the $k$-th contact wrenches acting on the robot.
+where $$\bf{M}(\bf{q})$$ is the symmetric positive definite inertia matrix of the robot, $$\bf{C}(\bf{q},\bf{\nu})$$ is the vector of Coriolis and centrifugal terms, $$\bf{g}(\bf{q})$$ is the vector of gravitational terms, $$\bf{B}=(\bf{0}_{n\times{6}},\bf{1}_n)^T$$ is a selector matrix, $$\bf{\tau}$$ is the vector of actuator joint torques, and $$\bf{f}^{c}_{k}$$ is the vector of the $$k$$-th contact wrenches acting on the robot.
 More information about the humanoid robot modeling can be found in <d-cite key="sugihara2020survey"></d-cite>. 
 
 ### 2) Simplified humanoid robot models
@@ -100,7 +98,7 @@ is connected through a variable-length link to the robot center of mass (CoM). A
 \ddot{\bf{x}} = \frac{g}{z_0}({\bf{x} - \bf{x}_{b}}),
 \label{eq:lipm}
 \end{equation}
-where $g$ is the gravitational acceleration constant, $z_0$ is the constant height of the CoM, $\bf{x} \in \mathbb{R}^2$ is the CoM coordinate vector, and $\bf{x}_{b} \in \mathbb{R}^2$ is the base of the LIPM coordinate vector.
+where $$g$$ is the gravitational acceleration constant, $$z_0$$ is the constant height of the CoM, $$\bf{x} \in \mathbb{R}^2$$ is the CoM coordinate vector, and $$\bf{x}_{b} \in \mathbb{R}^2$$ is the base of the LIPM coordinate vector.
 
 The base of the LIPM is often assumed to be the Zero Moment Point (ZMP) (equivalent to the center of pressure, CoP) of the humanoid robot <d-cite key="vukobratovic1972stability"></d-cite>.
 The LIPM dynamics can be divided into stable and unstable modes, where the unstable mode is referred as (instantaneous) Capture Point <d-cite key="pratt2006"></d-cite>,  or Divergent Component of Motion (DCM) <d-cite key="takenaka2009real, englsberger2015"></d-cite>
@@ -110,7 +108,7 @@ The DCM dynamics is characterised by a first-order system as:
 {\bf{\xi}} = \bf{x} + b{\bf{\dot{x}}},
 \label{eq:dcmCOM}
 \end{equation}
-where $\bf{\xi}$ and $b = \sqrt{\frac{z_0}{g}}$ are the DCM variable and the time constant. Equation \ref{eq:dcmCOM} shows that the CoM follows the DCM.
+where $$\bf{\xi}$$ and $$b = \sqrt{\frac{z_0}{g}}$$ are the DCM variable and the time constant. Equation \ref{eq:dcmCOM} shows that the CoM follows the DCM.
 Differentiating Eq.~\eqref{eq:dcmCOM} and replacing into Eq.~\eqref{eq:lipm} results in:
 \begin{equation}
 \dot{\bf{\xi}} = \frac{1}{b} (\bf{\xi}- \bf{x}_b).
@@ -251,12 +249,12 @@ The whole-body control problem can be formalized with different cost functions a
 In the following, different whole-body control approaches are presented.
 
 ### 1) Whole-body inverse instantaneous velocity kinematics control
-The problem of inverse instantaneous or velocity kinematics is to find the configuration state velocity vector $\bf{\nu}(t)$ for a given set of task space velocities using the Jacobian relation.
+The problem of inverse instantaneous or velocity kinematics is to find the configuration state velocity vector $$\bf{\nu}(t)$$ for a given set of task space velocities using the Jacobian relation.
 <!-- % as in \eqref{eq:jacobian}. -->
 One common approach is to formalize the controller as a constrained  QP problem with inequality and equality constraints.
 Conventional solutions of redundant inverse kinematics are founded on the pseudo-inverse of the Jacobian matrix <d-cite key="kanoun2011"></d-cite>.
 ### 2) Whole-body inverse kinematics control
-The problem of Inverse Kinematics (IK) is to find the configuration space vector $\bf{q}(t)$ given the reference task space poses.
+The problem of Inverse Kinematics (IK) is to find the configuration space vector $$\bf{q}(t)$$ given the reference task space poses.
 This problem can be sometimes solved analytically for determined robots; however, this solution is not scalable to different architectures and for a redundant humanoid robot (with a high degree of freedom), it is not feasible.
 Differently from inverse instantaneous velocity kinematics, to solve the IK problem a nonlinear constrained optimization problem is defined using the geometrical forward kinematics relation.
 Solving this problem might be time-consuming and the results can be discontinuous as well.
