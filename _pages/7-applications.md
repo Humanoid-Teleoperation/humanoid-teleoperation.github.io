@@ -11,7 +11,7 @@ bibliography: humanoid-teleoperation.bib
 toc:
   - name: 'A. Telexistence and Telepresence'
   - name: 'B. Teleoperation in Hazardous Environments'
-  - name: 'C. Teleoperation in Manufacturing & Research Environments'
+  - name: 'C. Teleoperation in Manufacturing and Research Environments'
   - name: 'D. Telenursing'
   - name: 'E. Space Applications'
   - name: 'F. Service Robotics Application'
@@ -40,7 +40,7 @@ is the response time and the technology readiness level. For example, in the Fuk
 crisis where the human could not enter because of the radiation levels, it took more than three months to deliver a robot that could perform the first mission <d-cite key="nagatani2013emergency"></d-cite>. However, in cases such as Urban Search and Rescue Tasks, where humans' lives are jeopardized, 
 the delay for intervention is not admissible~<d-cite key="casper2003human"></d-cite>.
 
-## C. Teleoperation in Manufacturing & Research Environments
+## C. Teleoperation in Manufacturing and Research Environments
 Humanoid robots, despite being attractive because of their anthropomorphism and potential to operate in environments designed for humans, are still expensive and not affordable for many industries and research institutes.
 So far, this inconvenience has strongly limited their study to a restricted robotics community.
 Moreover, very often either the robot hardware or the underlying control software (or both) are not designed to comply with control failures, loss of balance or wrong interactions with the environment, which can lead to costly breakage. 

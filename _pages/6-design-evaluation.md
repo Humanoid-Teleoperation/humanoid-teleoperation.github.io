@@ -16,7 +16,7 @@ toc:
       - name: '3) Workload'
       - name: '4) Engagement, Immersion, Involvement, and Presence'
   - name: 'B. Interface Design and Human-centered Autonomy'
-  - name: 'C. Humanoid Robot Teleoperation Design, Evaluation Challenges & Future Directions'
+  - name: 'C. Humanoid Robot Teleoperation Design, Evaluation Challenges and Future Directions'
 ---
 
 In order to deploy the teleoperation system for \textit{real users}, such systems should meet the users' needs and be evaluated prior to deployment. These needs and considerations should be anticipated in the design and development phase.
@@ -119,7 +119,7 @@ High level of autonomy promotes the user's performance and diminishes the worklo
 Therefore an intermediate level of autonomy in which the user is in the control loop, i.e., human-centered autonomy, enhances the SA, reduces the workload, and improves the performance against failures~<d-cite key="Kaber2000Design"></d-cite>.
 
 
-## C. Humanoid Robot Teleoperation Design, Evaluation Challenges & Future Directions
+## C. Humanoid Robot Teleoperation Design, Evaluation Challenges and Future Directions
 
 The design of humanoid robots and teleoperation systems are inherently iterative, where the system goes under different evaluations. However, to improve the design, not many studies in the literature have been published to evaluate such systems systematically.
 Table \ref{tab:metrics} provides an overview of the works where different metrics are used to enhance and evaluate the teleoperation system. This table demonstrates that fewer behavioral and physiological measurements are employed to evaluate the developed system. We speculate that this is due to the lack of competencies in those fields in the robotics community.

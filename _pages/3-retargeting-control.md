@@ -29,8 +29,8 @@ toc:
       - name: '3) Whole-body inverse dynamics control'
       - name: '4) Momentum-based control'
   - name: 'E. Low-level Joint Controller'
-  - name: 'F. State Estimator, Localization & Mapping'
-  - name: 'G. Challenges & Future Directions for Retargeting & Control'
+  - name: 'F. State Estimator, Localization and Mapping'
+  - name: 'G. Challenges and Future Directions for Retargeting and Control'
 ---
 
 <!-- \begin{figure*}[!t]
@@ -84,7 +84,6 @@ The velocity of a frame $$\mathcal{A}$$ attached to the robot, i.e., $$^{\mathca
 Finally, the $$n+6$$ robot dynamics equations, with all $$n_c$$ contact forces applied on the robot, are described by~<d-cite key="cisneros2020inverse"></d-cite>:
 \begin{equation}
 \bf{M}(\bf{q}) \dot{\bf{\nu}} + \bf{C}(\bf{q},\bf{\nu})\bf{\nu} + \bf{g}(\bf{q}) = \bf{B}\bf{\tau} +  \sum_{k=1}^{n_c}\bf{\mathcal{J}}_{k}^{T}(\bf{q}){\bf{f}^{c}_k}
- <!-- {\bf{f}_{k}}^{c}, -->
 <!-- \label{eq:dyn} -->
 \end{equation}
 where $$\bf{M}(\bf{q})$$ is the symmetric positive definite inertia matrix of the robot, $$\bf{C}(\bf{q},\bf{\nu})$$ is the vector of Coriolis and centrifugal terms, $$\bf{g}(\bf{q})$$ is the vector of gravitational terms, $$\bf{B}=(\bf{0}_{n\times{6}},\bf{1}_n)^T$$ is a selector matrix, $$\bf{\tau}$$ is the vector of actuator joint torques, and $$\bf{f}^{c}_{k}$$ is the vector of the $$k$$-th contact wrenches acting on the robot.
@@ -118,7 +117,7 @@ Differentiating Eq.~\eqref{eq:dcmCOM} and replacing into Eq.~\eqref{eq:lipm} res
 Equations \eqref{eq:dcmCOM} and \eqref{eq:dcm} together represent the LIPM dynamics.
 
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-## B. Retargeting & Planning
+## B. Retargeting and Planning
 
 The goal of this block in Fig.~\ref{fig:retargeting_controller_architecture} is to morph the human commands or measurements coming from the teleoperation devices into robot references.
 It comprises the reference motions for the robot links as well as the robot locomotion references, i.e., alternate footstep locations, timings, and allocating a given footstep to the left or right foot to follow the user's commands.
@@ -153,7 +152,7 @@ Moreover, the problem of path planning and obstacle avoidance for a humanoid rob
 
 
 
-### 2) Retargeting & Motion Generation
+### 2) Retargeting and Motion Generation
 Given the continuous measurements from the teleoperation devices, we can divide the retargeting approaches into three groups: \textit{lower-body footstep motion generation}, \textit{upper-body retargeting}, and \textit{whole-body retargeting}.
 
 \paragraph*{Lower-body footstep motion generation}
@@ -192,7 +191,7 @@ In~<d-cite key="penco2019"></d-cite>, authors measured the normalized ground pro
 \label{sec:Stabilizer}
 The main goal of the \textit{stabilizer} is to implement a control policy that \textit{dynamically adapt} input references to enhance the stability and balance of the centroidal dynamics of the robot. Because of the complexity of robot dynamics, classical approaches are limited to examine the stability of a closed-loop control system.
 Therefore, other insights such as ZMP criteria and DCM dynamics are tailored in order to evaluate how far the robot is about to fall <d-cite key="koolen2012"></d-cite>.
-The \textit{stabilizer} gets inputs from the \textit{retargeting \& planning} level, as shown in Fig.~\ref{fig:retargeting_controller_architecture}.
+The \textit{stabilizer} gets inputs from the \textit{retargeting and planning} level, as shown in Fig.~\ref{fig:retargeting_controller_architecture}.
 However, these reference trajectories may destabilize robot's behavior, therefore the \textit{stabilizer} adapts those references based on different criteria.
 Accordingly, the output of the \textit{stabilizer} are references for the CoM position, the end-effector poses, joint angles, contact points, contact wrenches, and/or the rate of change of the momenta.
 Next, we provide an overview of stabilization approaches according to different criteria adopted so far in the literature.
@@ -284,7 +283,7 @@ For example, ankle joint torque control allows for conforming the foot to the gr
 However, the compliance control with only joint torques may lead to poor velocity or position tracking, therefore a mixture of them is proposed in the feedback and feed-forward terms of the joint controller in <d-cite key="johnson2017team, kuindersma2016optimization, cisneros2020inverse"></d-cite>.
 
 
-## F. State Estimator, Localization & Mapping
+## F. State Estimator, Localization and Mapping
 
 These blocks in Fig.~\ref{fig:retargeting_controller_architecture} receive measurements from the robot sensors and estimate the necessary information for other blocks in Fig.~\ref{fig:retargeting_controller_architecture} or to the human as shown in Fig.~\ref{fig:teleoperation_architecture} (for assisted teleoperation). 
 A family of well-known model-based estimation techniques commonly used in robotics is the Kalman filters.
@@ -305,7 +304,7 @@ Nevertheless, exploiting only the proprioceptive sensors does not lead to observ
 Exteroceptive data such as camera information allows finding feasible regions for the humanoid robot foot locations as well as a map of the environment and obstacles.
 
 
-## G. Challenges & Future Directions for Retargeting & Control
+## G. Challenges and Future Directions for Retargeting and Control
 
 Humanoid robot teleoperation is a new field, and many challenges to put together whole-body coordinated motion retargeting, planning, stability, and control are not addressed effectively yet.
 For example, dividing the retargeting and planning problems of humanoid robot teleoperations appears to be useful but not effective in performing agile teleoperation tasks outside of the lab (in the real world) and in unstructured environment as it is the case for many hazardous environments and disaster response scenarios.
