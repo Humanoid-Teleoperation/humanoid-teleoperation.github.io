@@ -106,8 +106,8 @@ Following the workshop in <d-cite key="workshop2019"></d-cite>, this survey pape
 
 
 
-Starting from what emerged from the workshop, we conducted a survey on teleoperation of humanoid robots. We present here the systems and devices that have been adopted so far to teleoperate humanoids (Sec. \ref{sec:TeleoperationSystemDevices}) and how these robots have been modeled, retargeted, and controlled (Sec. \ref{sec:RobotControl}). We also examine a
-promising case of teleoperation in which the robot assists the user in accomplishing a desired task (Sec. \ref{sec:AssistedTele}). 
-Later, we discuss complications along with some compensating solutions that arise due to non-ideal communication channels (Sec. \ref{sec:CommunicationChannel}).
-We explain the evaluation of teleoperation systems prior to development to meet the users' needs (Sec. \ref{sec:EvaluationMetrics}). 
-Finally, discussions on current and potential applications and the associated challenges follow (Sec. \ref{sec:Applications}).  
+Starting from what emerged from the workshop, we conducted a survey on teleoperation of humanoid robots. We present here the systems and devices that have been adopted so far to teleoperate humanoids (Sec. II) and how these robots have been modeled, retargeted, and controlled (Sec. III). We also examine a
+promising case of teleoperation in which the robot assists the user in accomplishing a desired task (Sec. IV). 
+Later, we discuss complications along with some compensating solutions that arise due to non-ideal communication channels (Sec. V).
+We explain the evaluation of teleoperation systems prior to development to meet the users' needs (Sec. VI). 
+Finally, discussions on current and potential applications and the associated challenges follow (Sec. VII).  

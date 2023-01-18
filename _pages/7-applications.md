@@ -38,30 +38,30 @@ Normally, in natural disasters the time is very critical; therefore, another imp
 to consider
 is the response time and the technology readiness level. For example, in the Fukushima 
 crisis where the human could not enter because of the radiation levels, it took more than three months to deliver a robot that could perform the first mission <d-cite key="nagatani2013emergency"></d-cite>. However, in cases such as Urban Search and Rescue Tasks, where humans' lives are jeopardized, 
-the delay for intervention is not admissible~<d-cite key="casper2003human"></d-cite>.
+the delay for intervention is not admissible <d-cite key="casper2003human"></d-cite>.
 
 ## C. Teleoperation in Manufacturing and Research Environments
 Humanoid robots, despite being attractive because of their anthropomorphism and potential to operate in environments designed for humans, are still expensive and not affordable for many industries and research institutes.
 So far, this inconvenience has strongly limited their study to a restricted robotics community.
 Moreover, very often either the robot hardware or the underlying control software (or both) are not designed to comply with control failures, loss of balance or wrong interactions with the environment, which can lead to costly breakage. 
 In an example of teleoperation in a manufacturing environment by Kheddar et. al. by <d-cite key="kheddar2019humanoid"></d-cite>, the humanoid robots TORO and HRP-4 have been deployed in an aircraft manufacturing environment for assembly operations.
-Another example in construction sites can be found in~<d-cite key="yokoi2003tele"></d-cite>.
+Another example in construction sites can be found in <d-cite key="yokoi2003tele"></d-cite>.
 
 
 ## D. Telenursing
 Front-line healthcare workers are exposed to infectious diseases and are at higher risk of infection compared with the general community. This was evident during disease outbreaks, as experienced during the recent COVID-19 pandemic.
 Nurses physically interact with their patients and the environment for a wide variety of tasks such as manipulating objects, taking measurements, and interacting with them.
-In this respect, teleoperated robots can facilitate the situation and improve the nurses' safety by performing some of their tasks, exemplified in~<d-cite key="li2017development"></d-cite>.
+In this respect, teleoperated robots can facilitate the situation and improve the nurses' safety by performing some of their tasks, exemplified in <d-cite key="li2017development"></d-cite>.
 However, robots should not only perform the nurses' tasks but also avoid patients' discomfort or avoid limiting other health worker activities.
 In this respect, the teleoperation of humanoid robots can potentially overcome these challenges when being deployed in clinical environments with the supervision of professional operators and other healthcare personnel.
 
 
 
 ## E. Space Applications
-Space robotics has many applications, including satellite on-orbit servicing, maintenance of the ISS, performing experiments there, and interplanetary exploration and construction~<d-cite key="workshop2019, flores2014review"></d-cite>.
+Space robotics has many applications, including satellite on-orbit servicing, maintenance of the ISS, performing experiments there, and interplanetary exploration and construction <d-cite key="workshop2019, flores2014review"></d-cite>.
 Some of these tasks cannot be performed by humans due to cost, safety, and the increased complexity of the required system. 
 On the other hand, the reliability and robustness of autonomous robots are not yet sufficient to perform such tasks autonomously. Therefore, teleoperation of space robots with different degrees of autonomy is required.
-Space applications are more challenging due to communication latency and bandwidth, possible unknown kinematics and dynamics properties of the target objects of manipulation, and human factors~<d-cite key="flores2014review"></d-cite>.
+Space applications are more challenging due to communication latency and bandwidth, possible unknown kinematics and dynamics properties of the target objects of manipulation, and human factors <d-cite key="flores2014review"></d-cite>.
 In the case of bilateral teleoperation, the round trip communication delay matters; however, time-domain passivity control approaches can compensate to some extent for earth-orbiting robots with the cost of degrading the efficiency <d-cite key="ryu2010passive"></d-cite>.
 However, for application with higher distances, it is a compromise between autonomy, risk, and efficiency.
 To overcome that, <d-cite key="Lii2017Toward"></d-cite> proposed a supervised autonomy framework with a natural interface to astronauts in the ISS for teleoperating the SUPVIS Justin robot on Earth, simulating an interplanetary solar panel service and maintenance task.
@@ -69,7 +69,7 @@ To overcome that, <d-cite key="Lii2017Toward"></d-cite> proposed a supervised au
 
 ## F. Service Robotics Application
 Another area of use of humanoid robot teleoperation is in domestic environments such as houses,
-supermarkets, schools, and hotels with a diverse range of goals such as giving care to elderly people or housekeeping~<d-cite key="broekens2009assistive"></d-cite>, restocking the market shelves,
+supermarkets, schools, and hotels with a diverse range of goals such as giving care to elderly people or housekeeping <d-cite key="broekens2009assistive"></d-cite>, restocking the market shelves,
 teleducation, guiding visitors in hotels, or teletourism. 
 These environments are intrinsically unstructured and built for humans' use; therefore, a humanoid robot is likely to be deployed for such applications.
 These applications will become more evident when the operator of the humanoid robot cannot be present in the target environment. In other words, workforces who teleoperate the humanoid robot can be at any place.
