@@ -88,6 +88,17 @@ including the advances to measure the human motion, the physiological states, an
 We report in TABLE 1 the various measurement devices adopted so far for humanoid robot teleoperation.
 
 
+<div class="caption">
+TABLE 1: Main works and technologies related to the teleoperation of humanoids.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/paper/table2.png" title="teleop-table" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
+
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%% -->
 ### 1) Human kinematics and dynamics measurements
 To provide the references for the robot motion, we need to sense human intentions.
