@@ -67,7 +67,7 @@ The strategies for whole-body bilateral teleoperation utilize kinesthetic feedba
 \begin{equation}
     {\bf{f}_{fb}} = {k_{H}}\left[\left( {\dot{\bf{x}}_R}' - {\dot{\bf{x}}_H}' \right) +  {\bf{f}_{ext}}'\right],
 \end{equation}
-where $\dot{\bf{x}}_i'$ is the dimensionless CoM velocity of the human ($H$) and robot ($R$) <d-cite key="pratt2006"></d-cite>, $\bf{f}_{ext}'$ is dimensionless external force vector applied to the robot, and $k_H$ is a scaling factor proportional to the operator's size and body mass. This strategy enables human and robot to dynamically take simultaneous steps.
+where $${\dot{\bf{x}}_i}'$$ is the dimensionless CoM velocity of the human ($H$) and robot ($R$) <d-cite key="pratt2006"></d-cite>, $${\bf{f}_{ext}}'$$ is dimensionless external force vector applied to the robot, and $${k_H}$$ is a scaling factor proportional to the operator's size and body mass. This strategy enables human and robot to dynamically take simultaneous steps.
 
 
 <div class="row">
