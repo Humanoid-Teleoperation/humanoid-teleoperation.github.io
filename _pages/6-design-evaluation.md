@@ -135,6 +135,16 @@ Table II provides an overview of the works where different metrics are used to e
 More recently, ANA Avatar XPRIZE <d-cite key="AnaAvatarXprize"></d-cite> took the lead in the evaluation of humanoid robot teleoperation systems by assessing both task performance and subjective measures in locomotion, manipulation, and social interaction scenarios. 
 These evaluations can help the developers to choose proper teleoperation devices and adjust the autonomy level, more specifically retargeting and control approaches for humanoid teleoperation according to the architecture presented in Sec. 3.
 
+
+<div class="caption">
+TABLE 2: Examples of evaluation metrics for the design and evaluation of robot teleoperation setups.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/paper/table2.png" title="design-table" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 <!-- \begin{table}
 \setlength\tabcolsep{5pt}
 \centering
