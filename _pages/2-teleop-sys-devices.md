@@ -93,7 +93,7 @@ TABLE 1: Main works and technologies related to the teleoperation of humanoids.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/paper/table2.png" title="teleop-table" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/paper/table1.png" title="teleop-table" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
