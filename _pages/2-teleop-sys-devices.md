@@ -49,7 +49,7 @@ Moreover, the choice of the interfaces should make the user feel comfortable, he
     </div>
 </div>
 <div class="caption">
-Schematic architecture for teleoperating a humanoid.
+Fig. 2: Schematic architecture for teleoperating a humanoid.
 </div>
 
 

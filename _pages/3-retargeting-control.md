@@ -69,7 +69,7 @@ Finally, challenges unique to humanoid robot retargeting, control, and possible 
     </div>
 </div>
 <div class="caption">
-Flowchart of a humanoid robot retargeting, planning, and control architecture (red color: references/feedback of human; blue color: retargeting, motion generation, and control; green color: perception and estimation).
+Fig. 3: Flowchart of a humanoid robot retargeting, planning, and control architecture (red color: references/feedback of human; blue color: retargeting, motion generation, and control; green color: perception and estimation).
 </div>
 
 
@@ -155,7 +155,7 @@ Moreover, the problem of path planning and obstacle avoidance for a humanoid rob
 ### 2) Retargeting and Motion Generation
 Given the continuous measurements from the teleoperation devices, we can divide the retargeting approaches into three groups: _lower-body footstep motion generation_, _upper-body retargeting_, and _whole-body retargeting_.
 
-\paragraph*{Lower-body footstep motion generation}
+_Lower-body footstep motion generation:_
 The role of this block is to plan the footstep motion and find the sequence of foot locations and timings given the CoM position or velocity, and the floating base orientation or angular velocity provided by teleoperation devices.
 One possible approach to address this problem is based on the instantaneous capture point <d-cite key="pratt2006"></d-cite>.
 Given the reference CoM position and velocity, one can compute the next 
@@ -165,7 +165,7 @@ Another way to find the sequence of footsteps is to formulate an optimization pr
 The footstep timing can be found from the CoM velocity such that the total gait cycle duration corresponds to the average CoM velocity and gait length.
 This approach uses minimal information to generate footstep motion and does not enforce the user and the robot motion similarity.
 
-\paragraph*{Upper-body retargeting}
+_Upper-body retargeting:_
 In this method, the retargeting is done either in task space or configuration space. 
 In the task space retargeting, the Cartesian pose (or velocity) of some human limbs is mapped to corresponding values for the robot limbs.
 Later, the inverse kinematic problem is solved by minimizing a cost function on the basis of the robot model while considering the robot constraints <d-cite key="darvish2019"></d-cite>.
@@ -181,7 +181,7 @@ Configuration space retargeting refers to the mapping in the joint space from hu
 In this technique, human measurements and model are used in an inverse kinematics problem. The joint angles and velocity of the human joints are identified and mapped to the corresponding joints of the robot <d-cite key="Liarokapis2013"></d-cite>.
 When the human joint ranges differs from those of a humanoid, the robot constraints should also be applied in the morphing function.
 
-\paragraph*{Whole-body retargeting}
+_Whole-body retargeting:_
 This method measures the whole-body motion of human and kinematically retargets to the robot motion, similar to the upper-body retargeting approaches. Given the environment information, this approach may consider the contact constraints in the retargeting phase. Thus, this approach yields footstep locations, sequences, and timings. Later, outputs of this technique are provided to the _stabilizer_, to deliberate on the feasibility and enhance the robot stability <d-cite key="ishiguro2018"></d-cite>.
 In <d-cite key="penco2019"></d-cite>, authors measured the normalized ground projection of human CoM from an arbitrary foot and retargeted it to the equivalent robot CoM ground projection, on a line connecting the two robot feet. This approach can be extended toward retargeting the heel-to-toe motion (orthogonal to the feet line) and multi-contact scenarios <d-cite key="otani2017"></d-cite>. 
 
@@ -203,7 +203,7 @@ Next, we provide an overview of stabilization approaches according to different 
     </div>
 </div>
 <div class="caption">
-Different stability criteria approaches.
+Fig. 4: Different stability criteria approaches.
 </div>
 
 <!-- 

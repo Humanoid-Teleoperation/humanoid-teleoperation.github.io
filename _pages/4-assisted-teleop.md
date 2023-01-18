@@ -25,9 +25,9 @@ In fact, many tasks can achieve higher performances by sharing the autonomy amon
 Delegating robot's full control to the human operator's experience can often limit the efficiency of the teleoperation, resulting in clunky motions, failures, or numerous attempts before being able to accomplish a given task.
 This applies particularly to humanoid robots where the operator has to control many aspects at once via teleoperation (e.g., the pose of both hands, the feet location, balance) and can fail very easily without significant robot autonomy being used simultaneously.
 In shared-control teleoperation, some robot autonomy is used to assist the user in accomplishing the desired task, potentially making teleoperation easier and more seamless. Generally, the operator's input is modified according to specific metrics by sharing the control authority between the robot and the operator to enhance performance or safety <d-cite key="dragan2013"></d-cite>. 
-For example, in <d-cite key="rakita2019"></d-cite>, Rakita _et al._ teleoperated the upper-body of a humanoid using a shared-control approach, providing on-the-fly assistance to help the user complete tasks more easily, enhancing the end-effectors control while performing bi-manipulation of objects. Similarly, in <d-cite key="rahal2019"></d-cite>,  Rahal _et al._ designed a shared control approach to assist the human operator by enforcing different nonholonomic-like constraints representative of the cutting kinematics. In other shared-control approaches, the user provides an input $\bm{u}$, which enables the robot to predict human intent, and assist her/him in the task by adjusting the motion or by executing a pre-optimized version of that motion <d-cite key="dragan2013"></d-cite>. Then, a blending policy arbitrates the user input $\bm{u}$ and the enhanced robot motion $\bm{r}$, determining the final reference:
+For example, in <d-cite key="rakita2019"></d-cite>, Rakita _et al._ teleoperated the upper-body of a humanoid using a shared-control approach, providing on-the-fly assistance to help the user complete tasks more easily, enhancing the end-effectors control while performing bi-manipulation of objects. Similarly, in <d-cite key="rahal2019"></d-cite>,  Rahal _et al._ designed a shared control approach to assist the human operator by enforcing different nonholonomic-like constraints representative of the cutting kinematics. In other shared-control approaches, the user provides an input $\bf{u}$, which enables the robot to predict human intent, and assist her/him in the task by adjusting the motion or by executing a pre-optimized version of that motion <d-cite key="dragan2013"></d-cite>. Then, a blending policy arbitrates the user input $\bf{u}$ and the enhanced robot motion $\bf{r}$, determining the final reference:
 \begin{equation}
-\bm{u^*} = (1-\alpha)\bm{u}+\alpha\bm{r},
+\bf{u^*} = (1-\alpha)\bf{u}+\alpha\bf{r},
 \label{eq:sharedcontrol}
 \end{equation}
 where $\alpha$ can be any scalar function. A common choice is the confidence in the prediction of the user intent:
@@ -36,7 +36,7 @@ where $\alpha$ can be any scalar function. A common choice is the confidence in 
 \label{eq:alpha}
 \end{equation}
 where $d$ the distance to the goal and $D$ some threshold past
-which the confidence is 0. In this case the closer the robot gets to a predicted goal, the more likely that this goal is the correct one, and the input $\bm{r}$ is preferred over $\bm{u}$.
+which the confidence is 0. In this case the closer the robot gets to a predicted goal, the more likely that this goal is the correct one, and the input $\bf{r}$ is preferred over $\bf{u}$.
 The prediction of the user intent has also been successfully used to provide haptic guidance through a master device to teleoperate a robot manipulator <d-cite key="Ly2021"></d-cite>, and could be applied to humanoid robots by using exoskeletons as input devices. The haptic information can also be used to enhance the user's comfort during teleoperation <d-cite key="Rahal2020"></d-cite>.
 
 ## B. Supervised and Safeguarded Teleoperation
@@ -65,9 +65,9 @@ must balance while reproducing human movement.
 
 The strategies for whole-body bilateral teleoperation utilize kinesthetic feedback to inform the operator about the robot's dynamics and stability in real-time. The strategy usually focuses on the CoM dynamics, and other condensed information about the robot. For instance, the cable driven feedback interface in <d-cite key="peternel2013"></d-cite> exerts forces on the demonstrator’s waist corresponding to the state of the robot’s CoM. This feedback allows the human to teach the robot how to compliantly interact with the environment. In <d-cite key="Wang2015"></d-cite>, the feedback force applied to the human's torso is proportional to how close the robot is from tipping over. This is estimated by considering the distance between the robot's CoP and the edge of the support polygon. The closer the robot is from tipping over in one direction, the larger the feedback force applied to the operator in the opposite direction. A similar strategy is used in <d-cite key="brygo2014b"></d-cite> by providing discrete vibration levels to the operator using a belt with vibrotactile feedback. In <d-cite key="ishiguro2020bilateral"></d-cite>, the force feedback device TABLIS, a powered exoskeleton, applies forces to the operator's feet to indicate that the robot is stepping onto an obstacle. This enables the operator to control the robot to navigate over objects. Finally, in <d-cite key="ramos2019dynamic"></d-cite> the force feedback is utilized to dynamically synchronize human and machine. The force feedback generates drag (negative feedback) if the robot cannot keep up with the operator's movement, or it speeds up human motion (positive feedback) if the robot moves faster than the operator. The high-level expression for the force feedback is given by:
 \begin{equation}
-    \bm{f}_{fb} = k_{H}\left[\left( \dot{\bm{x}}_R' - \dot{\bm{x}}_H' \right) +  \bm{f}_{ext}'\right],
+    {\bf{f}_{fb}} = {k_{H}}\left[\left( {\dot{\bf{x}}_R}' - {\dot{\bf{x}}_H}' \right) +  {\bf{f}_{ext}}'\right],
 \end{equation}
-where $\dot{\bm{x}}_i'$ is the dimensionless CoM velocity of the human ($H$) and robot ($R$) <d-cite key="pratt2006"></d-cite>, $\bm{f}_{ext}'$ is dimensionless external force vector applied to the robot, and $k_H$ is a scaling factor proportional to the operator's size and body mass. This strategy enables human and robot to dynamically take simultaneous steps.
+where $\dot{\bf{x}}_i'$ is the dimensionless CoM velocity of the human ($H$) and robot ($R$) <d-cite key="pratt2006"></d-cite>, $\bf{f}_{ext}'$ is dimensionless external force vector applied to the robot, and $k_H$ is a scaling factor proportional to the operator's size and body mass. This strategy enables human and robot to dynamically take simultaneous steps.
 
 
 <div class="row">
@@ -76,7 +76,7 @@ where $\dot{\bm{x}}_i'$ is the dimensionless CoM velocity of the human ($H$) and
     </div>
 </div>
 <div class="caption">
-    General concept for whole-body bilateral teleoperation. The robot  WBC computes joint torques $\tau_{j}$ using the reference interaction forces $F_H$ from the operator and the error $e$ between the human state $X_H$ and the robot state $X_R$. The external contact forces $F_k$ applied to the robot create a net wrench $W_{ext}$, which is used by the human-machine interface (HMI) to compute a proportional kinesthetic feedback $F_{fb}$ to the operator.
+    Fig. 5: General concept for whole-body bilateral teleoperation. The robot  WBC computes joint torques $\tau_{j}$ using the reference interaction forces $F_H$ from the operator and the error $e$ between the human state $X_H$ and the robot state $X_R$. The external contact forces $F_k$ applied to the robot create a net wrench $W_{ext}$, which is used by the human-machine interface (HMI) to compute a proportional kinesthetic feedback $F_{fb}$ to the operator.
 </div>
 
 <!-- 

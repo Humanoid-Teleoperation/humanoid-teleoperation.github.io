@@ -38,10 +38,8 @@ Although old, these techniques are still in use when dealing with extremely comp
 as humanoid robots are.
 As an example, the robots that participated during the DRC
 had to deal	with a communication channel represented by two links:
-\begin{inparaenum}[(a)]
-\item a bi-directional low bandwidth (9600 bps) continuous communication path, or
-\item a unidirectional high bandwidth (300 Mbps) communication path with intermittent connection.
-\end{inparaenum}
+(a) a bi-directional low bandwidth (9600 bps) continuous communication path, or
+(b) a unidirectional high bandwidth (300 Mbps) communication path with intermittent connection.
 The purpose was to boost the autonomy of the robots.
 As a result, most of the teams employed high-level commands, visual aids, and no bilateral
 teleoperation <d-cite key="feng2015optimization"></d-cite>.
@@ -60,12 +58,10 @@ Particularly, using _network theory_ and the concept of passivity allowed to ach
 time-delayed teleoperation assuming constant-time delays <d-cite key="Anderson_IJRR1992"></d-cite> <d-cite key="Niemeyer_JOE1991"></d-cite>.
 The _constant-time delay_ assumption is limited and valid for simple communication channels.
 Packet switched networks, as it is the case of Internet, introduce additional difficulties:
-\begin{inparaenum}[(a)]
-\item random varying delays that can reach very high values,
-\item a discrete-time exchange of information,
-\item the effect of quantization, and
-\item loss of packets <d-cite key="hokayem2006bilateral"></d-cite>.
-\end{inparaenum}
+(a) random varying delays that can reach very high values,
+(b) a discrete-time exchange of information,
+(c) the effect of quantization, and
+(d) loss of packets <d-cite key="hokayem2006bilateral"></d-cite>.
 Varying-time delays appear due to several factors like traffic congestion, bandwidth, and information loss.
 The latter mainly caused by transmission time-outs, transmission errors, and a limited buffer size.
 To deal with the varying-time delay,
@@ -80,11 +76,9 @@ Distortion is another effect introduced by the communication channel.
 In case of packet switched networks, a delay of discrete-time velocity information results in a distortion of velocity and position drift, hence, degrading the performance.
 Solutions to this problem can include the exchange of position information together with the velocity, or time-stamping the information <d-cite key="Chopra_ACC2003"></d-cite>.
 Another source of distortion is due to the policies introduced when there is information loss:
-\begin{inparaenum}[(a)]
-\item to treat the lost packet as a null packet,
-\item to use the last valid packet, or
-\item to use interpolation <d-cite key="hokayem2006bilateral"></d-cite>.
-\end{inparaenum}
+(a) to treat the lost packet as a null packet,
+(b) to use the last valid packet, or
+(c) to use interpolation <d-cite key="hokayem2006bilateral"></d-cite>.
 			
 ## C. Network-based Model
 
@@ -140,5 +134,5 @@ More specifically to the humanoid robot's unilateral and bilateral teleoperation
 With the rise of machine-learning techniques, an envisioning approach to overcome the delay is to use predictive approaches, both from the human and the robot side.
 On one hand, the human motion should be predicted and mapped to the robot, and on the other hand, the robot motion and interaction forces with the environment, as well as the stream of the visual feedback, should be predicted and sent to the human operator. 
 Finally, to speculate the humanoid robot's balance through teleoperation with a lower level of autonomy, we may consider the human operator, and retargeting and control strategy, all together, as a complex control system to balance the humanoid robot. In this case, disturbances on the robot can be controlled through the whole teleoperation pipeline and human commands.
-By speculating on the simplified robot model, i.e., LIPM , studies shows that if the time delay of the system is higher than a critical time delay, the robot destabilizes <d-cite key="milton2009time"></d-cite>. The critical time delay ${\tau}_{c}$ is relevant to the robot CoM height, i.e., ${\tau}_{c} = \beta  \sqrt{\frac{z_0}{g}}$ from Eq. (2). The lower the CoM height, the lower becomes ${\tau}_{c}$.
+By speculating on the simplified robot model, i.e., LIPM , studies shows that if the time delay of the system is higher than a critical time delay, the robot destabilizes <d-cite key="milton2009time"></d-cite>. The critical time delay ${{\tau}_{c}}$ is relevant to the robot CoM height, i.e., ${{\tau}_{c}} = \beta  \sqrt{\frac{z_0}{g}}$ from Eq. (2). The lower the CoM height, the lower becomes ${{\tau}_{c}}$.
 This is related to the fact that a lower CoM height implies faster dynamics of the LIPM, hence a lower time delay is tolerated to keep the humanoid robot's balance. Here $\beta$ can be related to different parameters such as the human performance, the retargeting and control strategy, and the robot actuators.

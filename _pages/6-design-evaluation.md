@@ -30,7 +30,9 @@ The rest of this section adopts some metrics proposed in relevant fields that he
 
 ### 1) Usability Assessment
 
-According to ISO 9241 <d-cite key="ISO9241"></d-cite>, _usability_ is defined as _``the extent to which a system, product or service can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use''._
+According to ISO 9241 <d-cite key="ISO9241"></d-cite>, _usability_ is defined as 
+>the extent to which a system, product or service can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.
+
 In line with this definition and the teleoperation context, effectiveness is the degree of accuracy and completeness in which the user reaches the teleoperation goal, whereas efficiency is related to the resources being used (e.g., time, cost, human effort, etc.) with respect to the achieved outcome <d-cite key="ISO9241"></d-cite>. 
 Effectiveness and efficiency are considered as the objective usability measures, which depend on the teleoperation task.
 On the other hand, satisfaction determines the degree in which the users' needs and expectations are met as a result of the use of the teleoperation system <d-cite key="ISO9241"></d-cite>. It is determined according to the user's emotional, physical, and cognitive responses.
@@ -48,10 +50,10 @@ An attempt to provide a holistic taxonomy of usability evaluation in robot teleo
 ### 2) Situational Awareness (SA)
 
 SA correlates the user capabilities, training, experiences, preconceptions, and objectives with the ongoing task workload together <d-cite key="endsley1988situation"></d-cite>.
-Endsley identified _situation awareness_ with three levels as _``the perception of elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future"_ <d-cite key="endsley1988situation"></d-cite>.
-Accordingly,
-SA 
-tries to understand the process which leads to decision making, considering a variety of elements.
+Endsley identified _situation awareness_ with three levels as 
+> the perception of elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future <d-cite key="endsley1988situation"></d-cite>.
+
+Accordingly, SA tries to understand the process which leads to decision making, considering a variety of elements.
 
 
 High SA promotes the probability of a good performance, and the poor performance of the task is normally the result of SA loss. SA is lost when the user's knowledge is incomplete or inaccurate, the user attention is narrowed to some elements, or when the mental model of the user diverges from the reality <d-cite key="endsley1988situation, Nguyen2019Review"></d-cite>.
@@ -71,7 +73,9 @@ While SAGAT is very reliable, it is intrusive to the natural flow of the task ex
 
 Workload relates the resources demanded by a task to the available resources supplied by the human operator.
 There is no consensus about the definition of the workload <d-cite key="Miller2001Workload"></d-cite>;
-however, <d-cite key="Hart1988Development"></d-cite> identifies the _workload_ as _``the amount of work that is loaded on an individual, the time pressure in which a task is performed, the level of effort exerted, the success in meeting the task requirements, physiological and psychological"._ 
+however, <d-cite key="Hart1988Development"></d-cite> identifies the _workload_ as 
+> the amount of work that is loaded on an individual, the time pressure in which a task is performed, the level of effort exerted, the success in meeting the task requirements, physiological and psychological.
+ 
 Workload is related to the human operator's (subjective) experience in response to the task objectives.
 Especially in time critical decision making tasks, a high workload can lead to user errors or to a delay in the decision making.
 
@@ -88,9 +92,14 @@ Moreover, since the workload and task performance have a causal relationship, th
 ### 4) Engagement, Immersion, Involvement, and Presence
 Some metrics concerning robot teleoperation, specifically related to the subjective experience of the user are engagement, immersion, flow, involvement, and presence.
 In different fields, engagement is defined and measured distinctly. In the context of teleoperation, the definition and measurement approaches of engagement are especially relevant in gaming and virtual reality applications.
-According to <d-cite key="bouvier2014defining"></d-cite>, engagement is _``the willingness to have emotions, affect, and thoughts directed towards and aroused by the mediated activity in order to achieve a specific objective''._
+According to <d-cite key="bouvier2014defining"></d-cite>, engagement is 
+> the willingness to have emotions, affect, and thoughts directed towards and aroused by the mediated activity in order to achieve a specific objective.
 It relies on the user’s activity and expectations. The user is engaged when her/his perceptual, intellectual, and interactional expectations are met.
-In this context,  _presence_ is characterized as _``the subjective experience of being in one place or environment, even when one is physically situated in another''_ <d-cite key="witmer1998measuring"></d-cite>. Presence is a multifaceted concept that is related to _involvement_, a psychological state  depending on attention to remote environment stimuli, and _immersion_, a psychological state of perceiving oneself as a part of the remote environment stimulus flow <d-cite key="witmer1998measuring"></d-cite>.
+
+In this context,  _presence_ is characterized as 
+> the subjective experience of being in one place or environment, even when one is physically situated in another <d-cite key="witmer1998measuring"></d-cite>. 
+
+Presence is a multifaceted concept that is related to _involvement_, a psychological state  depending on attention to remote environment stimuli, and _immersion_, a psychological state of perceiving oneself as a part of the remote environment stimulus flow <d-cite key="witmer1998measuring"></d-cite>.
 Here, stimulus flow is a dynamic stream of sensory information.
 There are several factors contributing toward the sense of presence including control, sensory information, distraction, and realism factors.
 More information about _presence_ can be found in <d-cite key="witmer1998measuring"></d-cite>.
